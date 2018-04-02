@@ -1,0 +1,51 @@
+
+
+	<div class="container" style="min-height: 500px">
+
+		<div class="starter-template">
+			<h1>Create Employee</h1>
+
+			<div id="feedback"></div>
+
+			<form class="form-horizontal" id="create-employee-form">
+				<div class="form-group form-group-lg">
+					<label class="col-sm-2 control-label">Employee Name</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="empName"  required="required" />
+					</div>
+				</div>
+				<div class="form-group form-group-lg">
+					<label class="col-sm-2 control-label">Image URL</label>
+					<div class="col-sm-6">
+						<div class="input-group">
+						<input type="text" class="form-control" id="imageURL"
+							required="required" aria-describedby="genRandImg" /> <button type="button"
+							class="btn btn-info input-group-addon" id="genRandImg">Random</button>
+					</div>
+					</div>
+				</div>
+				<div class="form-group form-group-lg">
+					<label class="col-sm-2 control-label">Team(s)</label>
+					<div class="col-sm-6">
+						<select class="form-control" id="teamNames" multiple="multiple"  required="required"></select>
+					</div>
+				</div>
+				<div class="form-group">
+				<div class="col-sm-6" style="text-align:center">
+					<img src="" id="imageURLThumbnail" height="150" width="150" />
+				</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-6">
+						<button type="submit" id="btn-create-employee"
+							class="btn btn-primary btn-lg">Create</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+	</div>
+	
+	
+	<script type="text/javascript" src="js/employee.js"></script>

@@ -1,0 +1,33 @@
+    <input type="hidden" th:value=${teamID} id="teamId"/>
+    <main>
+      <header class="header">
+        <h2>
+          Office 
+        </h2>         
+        <h2>
+          Homeoffice 
+        </h2>
+        <h2>
+          Away 
+        </h2>
+      </header>
+      
+      <section class="columns">
+        <div class="column" data-col="office" title="ðŸ¢">
+        </div> 
+        <div class="column" data-col="homeoffice" title="ðŸ ">
+        </div>
+        <div class="column" data-col="away" title="ðŸ">
+        </div>
+      </section>
+
+      <form class="form addEmployee">
+        <input class="form-control input--name js-name" placeholder="Name">
+        <input class="form-control input--img js-image" placeholder="Image URL">
+        <input type="submit" class="btn btn-info btn--submit js-new" value=" Add">
+      </form>
+      
+    </main>
+    
+    <script src="js/touch-punch.js"></script>
+    <script src="js/awayboard.js"></script>

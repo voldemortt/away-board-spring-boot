@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Away Board</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="datatables/css/jquery.dataTables.min.css" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Away Board</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="#"
+					id="viewTeams">Teams <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> Options </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#" id="createTeamLink">Create
+							Team</a> <a class="dropdown-item" href="#" id="createEmployeeLink">Create
+							Employee</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#" id="editTeamLink">Edit Team</a> <a
+							class="dropdown-item" href="#" id="editEmployeeLink">Edit Employee</a>
+						
+					</div></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row teams"></div>
+	</div>
+</body>
+
+<script type="text/javascript" src="jquery/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="datatables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/sockjs.min.js"></script>
+<script type="text/javascript" src="js/stomp.min.js"></script>
+
+</html>
